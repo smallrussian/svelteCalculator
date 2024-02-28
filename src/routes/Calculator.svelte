@@ -161,7 +161,7 @@
     
     <button class = "button" on:click={() => handlePositiveNegative()}>+/-</button>
     <button class = "button" on:click={() => handlePercentage()}>%</button>
-    <button class="button {operator === '/' ? 'highlighted' : ''}" on:click={() => handleSelectOperator('/')}>/</button>
+    <button class="button {operator === '/' ? 'highlighted' : ''}" on:click={() => handleSelectOperator('/')}>÷</button>
     <button class="button" on:click={() => handleInputNumber(7)}>7</button>
     <button class="button" on:click={() => handleInputNumber(8)}>8</button>
     <button class="button" on:click={() => handleInputNumber(9)}>9</button>
