@@ -56,7 +56,10 @@
                 // @ts-ignore
                 if (parseFloat(displayValue) === 0) {
                     // @ts-ignore
-                    result = "Cannot divide by zero";
+                    displayValue = "Cannot divide by zero";
+                    setTimeout(() => {
+                        clearCalculator();
+                    }, 2000); // Reset after 2 seconds
                 } else {
                     // @ts-ignore
                     result = parseFloat(storedValue) / parseFloat(displayValue);
